@@ -188,7 +188,7 @@ function main(N,deg)
     b = 1
     h = (b-a)/N 
     c = a+h/2:h:b-h/2
-    l,w = gauss(2*deg+1) # make sur the integral approximation are exact in the linear case (f(u)=u) -> integrate a 2*deg order polynomial -> 2*deg+1 order for gauss
+    l,w = gauss(2*deg+1) # make sure the integral approximation are exact in the linear case (f(u)=u) -> integrate a 2*deg order polynomial -> 2*deg+1 order for gauss
     M = zeros(deg+1,deg+1)
     for i in 0:deg
         for j in 0:deg 
